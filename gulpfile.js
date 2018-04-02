@@ -54,25 +54,13 @@ gulp.task('clone',function(){
         .pipe(gulp.dest('ProductionCode/'));
         
 });
-
 // Task to compile Sass file into CSS, and minify CSS into build directory
 gulp.task('sass',function(){
-    gulp.src(DevelopmentCode+'scss/*.scss')
+    gulp.src(DevelopmentCode+'wwwroot/scss/*.scss')
         .pipe(plumber())
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest(ProductionCode+'css/'));
-});
-
-//creating task for concat and minify js
-gulp.task('concatjs',function(){
-    gulp.src([DevelopmentCode+'js/*.js',!DevelopmentCode+'js/*.min.'])
-        // .pipe(jsHint())
-        // .pipe(jsHint.reporter('jshint-stylish'))
-        .pipe(plumber())
-        .pipe(concat('bundle.js'))
-        .pipe(uglify())
-        .pipe(plugins.rename({suffix:'.min'}))
-        .pipe(gulp.dest(ProductionCode+'js/'));
+        .pipe(gulp.dest(DevelopmentCode+'wwwroot/css/'));
+        
 });
 
 
@@ -85,43 +73,13 @@ gulp.task('browser-sync',function(){
     });
 });
 
-//creating a task for minify images
-gulp.task('imagemin',function(){
-  return gulp.src(DevelopmentCode+'images/**/*')
-        .pipe(plumber())
-        .pipe(imagemin())
-        .pipe(gulp.dest(ProductionCode+'images/'));
-});
-
-
-//creating task for concat and minify css
-gulp.task('concatcss',function(){
-    gulp.src([DevelopmentCode+'css/*.css',!DevelopmentCode+'css/*.min.'])
-        // .pipe(jsHint())
-        // .pipe(jsHint.reporter('jshint-stylish'))
-        .pipe(plumber())
-        .pipe(concat('bundle.css'))
-        .pipe(minifyCSS())
-        .pipe(plugins.rename({suffix:'.min'}))
-        .pipe(gulp.dest(ProductionCode+'css/'));
-});
-
-//creating task for concat and minify html
-gulp.task('minifyhtml',function(){
-    gulp.src(DevelopmentCode+'**/*.html')
-        .pipe(plumber())
-        .pipe(minifyHTML())
-        .pipe(gulp.dest(ProductionCode));
-});
-
-
-gulp.task('watch',['browser-sync', 'concatjs', 'sass','imagemin','concatcss','minifyhtml'], function () {
-    gulp.watch(DevelopmentCode+'scss/*.scss', ['sass']);
-    gulp.watch(DevelopmentCode+'js/*.js', ['concatjs']);
-    gulp.watch(DevelopmentCode+'images/**/*', ['imagemin']);
-    gulp.watch(DevelopmentCode+'/**/css/*.css', ['concatcss']);
-    gulp.watch(DevelopmentCode+'**/*.html', ['minifyhtml']);  
-    // Reloads the browser whenever HTML or JS files change
+gulp.task('watch',['browser-sync' , 'sass'], function () {
+    gulp.watch(DevelopmentCode+'/**/scss/*.scss', ['sass']);
+    //gulp.watch(DevelopmentCode+'js/*.js', ['concatjs']);
+    // gulp.watch(DevelopmentCode+'images/**/*', ['imagemin']);
+    // gulp.watch(DevelopmentCode+'/**/css/*.css', ['concatcss']);
+    // gulp.watch(DevelopmentCode+'**/*.html', ['minifyhtml']);  
+    // // Reloads the browser whenever HTML or JS files change
     gulp.watch(DevelopmentCode+'**/*.*', browserSync.reload);
 });
 
