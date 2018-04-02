@@ -1,0 +1,11 @@
+H:\OneDrive\working on project\fashionSite\DevelopmentCode\bin\Debug\netcoreapp2.0\DevelopmentCode.deps.json
+H:\OneDrive\working on project\fashionSite\DevelopmentCode\bin\Debug\netcoreapp2.0\DevelopmentCode.runtimeconfig.json
+H:\OneDrive\working on project\fashionSite\DevelopmentCode\bin\Debug\netcoreapp2.0\DevelopmentCode.runtimeconfig.dev.json
+H:\OneDrive\working on project\fashionSite\DevelopmentCode\bin\Debug\netcoreapp2.0\DevelopmentCode.dll
+H:\OneDrive\working on project\fashionSite\DevelopmentCode\bin\Debug\netcoreapp2.0\DevelopmentCode.pdb
+H:\OneDrive\working on project\fashionSite\DevelopmentCode\obj\Debug\netcoreapp2.0\DevelopmentCode.csprojResolveAssemblyReference.cache
+H:\OneDrive\working on project\fashionSite\DevelopmentCode\obj\Debug\netcoreapp2.0\DevelopmentCode.csproj.CoreCompileInputs.cache
+H:\OneDrive\working on project\fashionSite\DevelopmentCode\obj\Debug\netcoreapp2.0\DevelopmentCode.AssemblyInfoInputs.cache
+H:\OneDrive\working on project\fashionSite\DevelopmentCode\obj\Debug\netcoreapp2.0\DevelopmentCode.AssemblyInfo.cs
+H:\OneDrive\working on project\fashionSite\DevelopmentCode\obj\Debug\netcoreapp2.0\DevelopmentCode.dll
+H:\OneDrive\working on project\fashionSite\DevelopmentCode\obj\Debug\netcoreapp2.0\DevelopmentCode.pdb
