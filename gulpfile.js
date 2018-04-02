@@ -49,7 +49,7 @@ gulp.task('Welcome',function(){
 
 //make a task for copy all file to ProductionCode
 gulp.task('clone',function(){
-    gulp.src('DevelopmentCode/**/*')
+    gulp.src(['DevelopmentCode/**/*',,"!"+DevelopmentCode+'/**/*.scss',"!"+DevelopmentCode+'/**/*.css' ,"!"+DevelopmentCode+'/**/*.js',"!"+DevelopmentCode+'/**/*.css',"!"+DevelopmentCode+'/**/images/*.*'])
         .pipe(plumber())
         .pipe(gulp.dest('ProductionCode/'));
         
@@ -119,7 +119,7 @@ gulp.task('watch',['browser-sync', 'concatjs', 'sass','imagemin','concatcss','mi
     gulp.watch(DevelopmentCode+'scss/*.scss', ['sass']);
     gulp.watch(DevelopmentCode+'js/*.js', ['concatjs']);
     gulp.watch(DevelopmentCode+'images/**/*', ['imagemin']);
-    gulp.watch(DevelopmentCode+'css/*.css', ['concatcss']);
+    gulp.watch(DevelopmentCode+'/**/css/*.css', ['concatcss']);
     gulp.watch(DevelopmentCode+'**/*.html', ['minifyhtml']);  
     // Reloads the browser whenever HTML or JS files change
     gulp.watch(DevelopmentCode+'**/*.*', browserSync.reload);
