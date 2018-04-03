@@ -10,6 +10,8 @@ namespace DevelopmentCode.Controllers
     {
         public IActionResult Index()
         {
+            int i;
+            
             return View();
         }
     }

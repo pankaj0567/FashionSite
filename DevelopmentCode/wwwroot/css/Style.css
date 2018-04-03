@@ -131,5 +131,58 @@ ul, ol {
     font-family: "Myriad Pro";
     font-weight: bold; }
 
+.prod-box {
+  width: 240px;
+  height: 316px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 0 30px; }
+  .prod-box > img {
+    max-width: 100%;
+    height: 316px; }
+  .prod-box .prod-trans {
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    text-align: center;
+    vertical-align: middle; }
+  .prod-box:hover .prod-trans {
+    opacity: 0.7;
+    transition: all 0.5s ease;
+    text-align: center;
+    padding-top: 110px;
+    box-sizing: border-box; }
+  .prod-box .CarcularBtns a {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    background: #fff;
+    color: #fe51ab;
+    text-decoration: none;
+    line-height: 45px;
+    text-align: center;
+    margin: 0 20px;
+    font-size: 18px;
+    border-radius: 50%; }
+    .prod-box .CarcularBtns a:hover {
+      background: #fe51ab;
+      color: white; }
+  .prod-box .prod-name {
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    margin: 20px auto; }
+
 .border {
   border: 1px solid black; }
