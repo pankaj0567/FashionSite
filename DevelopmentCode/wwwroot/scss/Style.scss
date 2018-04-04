@@ -21,7 +21,7 @@ ul, ol {
     @extend %customWidth;
     height:auto;
 }
-.container {
+.Customcontainer {
     width: 100%;
     max-width: 1280px;
     height: auto;
@@ -409,3 +409,19 @@ footer {
 .border {
     border: 1px solid black;
 }
+
+
+
+
+/* boostrapslider */
+#home_slider {
+    height: 500px;
+    width: 100%;
+
+    img {
+        height: 500px;
+        width: 100%;
+    }
+}
+
+/* boostrapslider end */

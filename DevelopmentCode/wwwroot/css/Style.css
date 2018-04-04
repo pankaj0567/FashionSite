@@ -12,26 +12,26 @@ ul, ol {
 #wrapper {
   height: auto; }
 
-.container {
+.Customcontainer {
   width: 100%;
   max-width: 1280px;
   height: auto;
   margin: 0px auto;
   overflow: hidden; }
-  .container #brand_logo {
+  .Customcontainer #brand_logo {
     float: left;
     width: 50%;
     max-width: 210px; }
-  .container header {
+  .Customcontainer header {
     line-height: 60px; }
-  .container #usermenu {
+  .Customcontainer #usermenu {
     float: right;
     width: 300px;
     text-align: right; }
-    .container #usermenu li {
+    .Customcontainer #usermenu li {
       width: 100px;
       display: inline-block; }
-      .container #usermenu li a {
+      .Customcontainer #usermenu li a {
         color: #17152A;
         text-decoration: none;
         font-size: 16px;
@@ -294,3 +294,13 @@ footer {
 
 .border {
   border: 1px solid black; }
+
+/* boostrapslider */
+#home_slider {
+  height: 500px;
+  width: 100%; }
+  #home_slider img {
+    height: 500px;
+    width: 100%; }
+
+/* boostrapslider end */
