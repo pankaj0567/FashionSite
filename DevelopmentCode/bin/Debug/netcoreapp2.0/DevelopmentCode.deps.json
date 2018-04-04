@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "fb235d9d0cc8795fc5ebe54da4874508b24247a8"
+    "signature": "b84222cb0572370fb95aeff7cac9d924ba64af02"
   },
   "compilationOptions": {
     "defines": [
@@ -26,7 +26,6 @@
           "Microsoft.AspNetCore.All": "2.0.5",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.2",
-          "bootstrap": "4.0.0",
           "jQuery": "3.3.1"
         },
         "runtime": {
@@ -34,12 +33,6 @@
         },
         "compile": {
           "DevelopmentCode.dll": {}
-        }
-      },
-      "bootstrap/4.0.0": {
-        "dependencies": {
-          "jQuery": "3.3.1",
-          "popper.js": "1.12.9"
         }
       },
       "jQuery/3.3.1": {},
@@ -2511,7 +2504,6 @@
           "lib/netstandard1.3/NuGet.Frameworks.dll": {}
         }
       },
-      "popper.js/1.12.9": {},
       "Remotion.Linq/2.1.1": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -4247,13 +4239,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "bootstrap/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-aW3kJMmptC2GD4+hIa3x3fSrPF4VkrWQ2PRBEJg+o7lMRMi7u4UW9igY/GP02/wrIpH/CusL+mQIM42YhvA3XQ==",
-      "path": "bootstrap/4.0.0",
-      "hashPath": "bootstrap.4.0.0.nupkg.sha512"
-    },
     "jQuery/3.3.1": {
       "type": "package",
       "serviceable": true,
@@ -5485,13 +5470,6 @@
       "sha512": "sha512-WCkN68c8q+USG+Ot1MmBDH+9DUo5dk7UB0QDMiwCYhrH7ZoFLKFGGNzJ8C3LTR1DvB1LW9BOxKeznnZznKiCTA==",
       "path": "nuget.frameworks/4.0.0",
       "hashPath": "nuget.frameworks.4.0.0.nupkg.sha512"
-    },
-    "popper.js/1.12.9": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-WfoI8YXFx31zr8w6AvYMmqKihR3a/wLc5wBhu41ApgBukTM8C2UHNSRFrO6485SDQ/HKoSn9yiEMgfBx1LVNNw==",
-      "path": "popper.js/1.12.9",
-      "hashPath": "popper.js.1.12.9.nupkg.sha512"
     },
     "Remotion.Linq/2.1.1": {
       "type": "package",

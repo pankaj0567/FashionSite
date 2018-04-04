@@ -7,12 +7,16 @@
     <title>Index</title>
     <script src="wwwroot/js/fontawesome-all.js"></script>
     <link href="wwwroot/css/Style.css" rel="stylesheet" />
-    <!--<link href="wwwroot/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />-->
+    <link href="wwwroot/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="wwwroot/lib/bootstrap/dist/js/jquery-3.1.0.js"></script>
+
+    <script src="wwwroot/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="wwwroot/lib/bootstrap/dist/js/npm.js"></script>
 </head>
 <body>
     <div id="wrapper">
         <!-- Header -->
-        <div class="container">
+        <div class="Customcontainer">
             <header>
                 <div id="brand_logo">
                     <img src="wwwroot/images/brand_logo.jpg" alt="Brand Logo" />
@@ -28,7 +32,7 @@
 
         <!-- navigation -->
         <div id="navigationbar">
-            <div class="container">
+            <div class="Customcontainer">
                 <nav id="mainnav">
                     <a href="#" class="active">Home</a>
                     <a href="#">New Arrivals</a>
@@ -49,17 +53,43 @@
             </div>
         </div>
         <!-- slider/banner -->
-        <div id="home_slider">
-            <ul>
-                <li><a href="#"><img src="wwwroot/images/slider-1.jpg" class="img-responsive" alt="Slider 1" /></a></li>
-                <!--<li><a href="#"><img src="wwwroot/images/slider-2.jpg" alt="Slider 2" /></a></li>
-            <li><a href="#"><img src="wwwroot/images/slider-3.jpg" alt="Slider 3" /></a></li>
-            <li><a href="#"><img src="wwwroot/images/slider-4.jpg" alt="Slider 4" /></a></li>
-            <li><a href="#"><img src="wwwroot/images/slider-5.jpg" alt="Slider 5" /></a></li>-->
+
+        <div id="home_slider" class="carousel slide" data-ride="carousel">
+
+            <!-- Carousel indicator -->
+            <ul class="carousel-indicators">
+                <li data-target="#home_slider" data-slide-to="0" class="active"></li>
+                <li data-target="#home_slider" data-slide-to="1"></li>
+                <li data-target="#home_slider" data-slide-to="2"></li>
+                <li data-target="#home_slider" data-slide-to="3"></li>
+                
 
             </ul>
+            <!-- Carousel Item -->
+            <div class="carousel-inner">
+                <div class="item active">
+
+                    <img src="wwwroot/images/slider-1.jpg" class="img-responsive" />
+                </div>
+                <div class="item ">
+                    <img src="wwwroot/images/slider-2.jpg" />
+                </div>
+                <div class="item ">
+                    <img src="wwwroot/images/slider-4.jpg" />
+                </div>
+                <div class="item">
+                    <img src="wwwroot/images/slider-5.jpg" />
+                </div>
+            </div>
+            <!-- Carousel navigator -->
+            <a href="#home_slider" class="carousel-control left" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a href="#home_slider" class="carousel-control right" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
         </div>
-        <div class="container topmargin">
+
+
+
+        <div class="Customcontainer topmargin">
             <div class="heading-block">
                 <h2>Categories</h2>
             </div>
@@ -105,13 +135,314 @@
             </div>
 
         </div>
-        <div class="container topmargin">
+        <div class="Customcontainer topmargin">
             <div class="heading-block">
-               
-                    <h2>Products</h2>
+
+                <h2>Trending Now</h2>
+            </div>
+            <div class="prod-Customcontainer">
+                <!-- 1 -->
+                <div class="prod-box">
+                    <img src="wwwroot/images/trend-1.jpg" />
+                    <div class="prod-trans">
+                        <div class="prod-features">
+                            <div class="CarcularBtns">
+                                <a href="#"> <i class="fa fa-heart"></i></a>
+                                <a href="#"> <i class="fa fa-search-plus"></i></a>
+                            </div>
+                            <div class="prod-name">
+                                Special Ladies Dresses
+                            </div>
+                            <div class="prod-price">
+                                $237.00
+                            </div>
+                            <div class="prod-btn">
+                                <a href="#"><i class="fa fa-cart-arrow-down"></i> ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- 2  -->
+                <div class="prod-box">
+                    <img src="wwwroot/images/trend-2.jpg" />
+                    <div class="prod-trans">
+                        <div class="prod-features">
+                            <div class="CarcularBtns">
+                                <a href="#"> <i class="fa fa-heart"></i></a>
+                                <a href="#"> <i class="fa fa-search-plus"></i></a>
+                            </div>
+                            <div class="prod-name">
+                                Special Ladies Dresses
+                            </div>
+                            <div class="prod-price">
+                                $237.00
+                            </div>
+                            <div class="prod-btn">
+                                <a href="#"><i class="fa fa-cart-arrow-down"></i> ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3  -->
+                <div class="prod-box">
+                    <img src="wwwroot/images/trend-3.jpg" />
+                    <div class="prod-trans">
+                        <div class="prod-features">
+                            <div class="CarcularBtns">
+                                <a href="#"> <i class="fa fa-heart"></i></a>
+                                <a href="#"> <i class="fa fa-search-plus"></i></a>
+                            </div>
+                            <div class="prod-name">
+                                Special Ladies Dresses
+                            </div>
+                            <div class="prod-price">
+                                $237.00
+                            </div>
+                            <div class="prod-btn">
+                                <a href="#"><i class="fa fa-cart-arrow-down"></i> ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4  -->
+                <div class="prod-box">
+                    <img src="wwwroot/images/trend-4.jpg" />
+                    <div class="prod-trans">
+                        <div class="prod-features">
+                            <div class="CarcularBtns">
+                                <a href="#"> <i class="fa fa-heart"></i></a>
+                                <a href="#"> <i class="fa fa-search-plus"></i></a>
+                            </div>
+                            <div class="prod-name">
+                                Special Ladies Dresses
+                            </div>
+                            <div class="prod-price">
+                                $237.00
+                            </div>
+                            <div class="prod-btn">
+                                <a href="#"><i class="fa fa-cart-arrow-down"></i> ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5  -->
+                <div class="prod-box">
+                    <img src="wwwroot/images/trend-5.jpg" />
+                    <div class="prod-trans">
+                        <div class="prod-features">
+                            <div class="CarcularBtns">
+                                <a href="#"> <i class="fa fa-heart"></i></a>
+                                <a href="#"> <i class="fa fa-search-plus"></i></a>
+                            </div>
+                            <div class="prod-name">
+                                Special Ladies Dresses
+                            </div>
+                            <div class="prod-price">
+                                $237.00
+                            </div>
+                            <div class="prod-btn">
+                                <a href="#"><i class="fa fa-cart-arrow-down"></i> ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6  -->
+                <div class="prod-box">
+                    <img src="wwwroot/images/trend-6.jpg" />
+                    <div class="prod-trans">
+                        <div class="prod-features">
+                            <div class="CarcularBtns">
+                                <a href="#"> <i class="fa fa-heart"></i></a>
+                                <a href="#"> <i class="fa fa-search-plus"></i></a>
+                            </div>
+                            <div class="prod-name">
+                                Special Ladies Dresses
+                            </div>
+                            <div class="prod-price">
+                                $237.00
+                            </div>
+                            <div class="prod-btn">
+                                <a href="#"><i class="fa fa-cart-arrow-down"></i> ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 7  -->
+                <div class="prod-box">
+                    <img src="wwwroot/images/trend-7.jpg" />
+                    <div class="prod-trans">
+                        <div class="prod-features">
+                            <div class="CarcularBtns">
+                                <a href="#"> <i class="fa fa-heart"></i></a>
+                                <a href="#"> <i class="fa fa-search-plus"></i></a>
+                            </div>
+                            <div class="prod-name">
+                                Special Ladies Dresses
+                            </div>
+                            <div class="prod-price">
+                                $237.00
+                            </div>
+                            <div class="prod-btn">
+                                <a href="#"><i class="fa fa-cart-arrow-down"></i> ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8  -->
+                <div class="prod-box">
+                    <img src="wwwroot/images/trend-8.jpg" />
+                    <div class="prod-trans">
+                        <div class="prod-features">
+                            <div class="CarcularBtns">
+                                <a href="#"> <i class="fa fa-heart"></i></a>
+                                <a href="#"> <i class="fa fa-search-plus"></i></a>
+                            </div>
+                            <div class="prod-name">
+                                Special Ladies Dresses
+                            </div>
+                            <div class="prod-price">
+                                $237.00
+                            </div>
+                            <div class="prod-btn">
+                                <a href="#"><i class="fa fa-cart-arrow-down"></i> ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9  -->
+                <div class="prod-box">
+                    <img src="wwwroot/images/trend-9.jpg" />
+                    <div class="prod-trans">
+                        <div class="prod-features">
+                            <div class="CarcularBtns">
+                                <a href="#"> <i class="fa fa-heart"></i></a>
+                                <a href="#"> <i class="fa fa-search-plus"></i></a>
+                            </div>
+                            <div class="prod-name">
+                                Special Ladies Dresses
+                            </div>
+                            <div class="prod-price">
+                                $237.00
+                            </div>
+                            <div class="prod-btn">
+                                <a href="#"><i class="fa fa-cart-arrow-down"></i> ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10  -->
+                <div class="prod-box">
+                    <img src="wwwroot/images/trend-10.jpg" />
+                    <div class="prod-trans">
+                        <div class="prod-features">
+                            <div class="CarcularBtns">
+                                <a href="#"> <i class="fa fa-heart"></i></a>
+                                <a href="#"> <i class="fa fa-search-plus"></i></a>
+                            </div>
+                            <div class="prod-name">
+                                Special Ladies Dresses
+                            </div>
+                            <div class="prod-price">
+                                $237.00
+                            </div>
+                            <div class="prod-btn">
+                                <a href="#"><i class="fa fa-cart-arrow-down"></i> ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
+
+        <!-- offers -->
+        <div class="Customcontainer">
+            <div class="heading-block">
+                <h2>Offers</h2>
+            </div>
+            <!-- offer-1 -->
+            <div class="offerbx">
+                <a href="#">
+                    <img src="wwwroot/images/offer-1.jpg" alt="Offers-1" />
+                </a>
+            </div>
+            <!-- offer-2 -->
+            <div class="offerbx">
+                <a href="#">
+                    <img src="wwwroot/images/offer-2.jpg" alt="Offers-2" />
+                </a>
+            </div>
+            <!-- offer-3 -->
+            <div class="offerbx">
+                <a href="#"><img src="wwwroot/images/offer-3.jpg" alt="Offers-3" /></a>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="Customcontainer">
+                <div class="footer-wide">
+                    <h3>Our Story</h3>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting <a href="#">Read More</a></p>
+                </div>
+                <div class="footer-list">
+                    <h3>Important Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Make Up</a></li>
+                        <li><a href="#">Deals</a></li>
+                        <li><a href="#">Tips & Tricks</a></li>
+                        <li><a href="#">Wears</a></li>
+                        <li><a href="#">Contact Us</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook-square"></i>Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square"></i>LinkedIn</a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square"></i>Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-square"></i>Pinterest</a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i>Google+</a></li>
+                        <li><a href="#"><i class="fa fa-reddit-square"></i>Reddit</a></li>
+                        <li><a href="#"><i class="fa fa-youtube-square"></i>Youtube</a></li>
+                        <li><a href="#"><i class="fa fa-digg"></i>Digg</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-wide">
+                    <h3>Subscribe Newsletter</h3>
+                    <div class="subsform">
+                        <form action="" method="" name="subscribers" id="subscribers">
+                            <div class="subsfield">
+                                <input type="email" name="subsmail" id="subsmail" class="subsmail" placeholder="Email Address" value="" />
+                                <button class="subsbtn" id="subsbtn" name="subsbtn"><i class="fa fa-paper-plane"> </i></button>
+                            </div>
+                            <div class="text-node">
+                                <p>Join our newsletter to receive latest offers and new arrivals direct in  your mailbox.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copystrip">
+            ©copyright 2018 by fashionsite | Privacy Policy | Term and Conditions.
+        </div>
+    </div>
 
 
 
